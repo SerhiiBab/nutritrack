@@ -1,7 +1,7 @@
 // /pages/api/parseMeal.ts
 import type { NextApiRequest, NextApiResponse } from "next";
 import { GoogleGenAI, Type } from "@google/genai";
-import { NutritionData } from "../../types";
+import { NutritionData } from "../types";
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
