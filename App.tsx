@@ -214,7 +214,7 @@ const App: React.FC = () => {
         </div>
 
         <footer className="text-center py-10 border-t border-slate-100 dark:border-slate-800 text-slate-400 text-sm">
-          NutriTrack KI &copy; 2025 – Gesund leben leicht gemacht.
+          NutriTrack KI &copy; 2026 – Gesund leben leicht gemacht.
         </footer>
       </div>
     );
