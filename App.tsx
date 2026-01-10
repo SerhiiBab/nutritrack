@@ -145,7 +145,7 @@ const App: React.FC = () => {
             <div className="bg-emerald-500 p-2 rounded-lg text-white">
               <Salad size={24} />
             </div>
-            <span className="text-xl font-bold text-slate-800 dark:text-white">NutriTrack KI</span>
+            <span className="text-xl font-bold text-slate-800 dark:text-white">NutriKI</span>
           </div>
           {renderThemeToggle()}
         </nav>
@@ -214,7 +214,7 @@ const App: React.FC = () => {
         </div>
 
         <footer className="text-center py-10 border-t border-slate-100 dark:border-slate-800 text-slate-400 text-sm">
-          NutriTrack KI &copy; 2026 – Gesund leben leicht gemacht.
+          NutriKI &copy; 2026 – Gesund leben leicht gemacht.
         </footer>
       </div>
     );
@@ -232,7 +232,7 @@ const App: React.FC = () => {
             <div className="bg-emerald-500 p-2 rounded-lg text-white">
               <Salad size={24} />
             </div>
-            <h1 className="text-xl font-bold text-slate-800 dark:text-white">NutriTrack KI</h1>
+            <h1 className="text-xl font-bold text-slate-800 dark:text-white">NutriKI</h1>
           </button>
           
           <div className="flex items-center gap-4">
