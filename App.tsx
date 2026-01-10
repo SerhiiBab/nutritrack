@@ -8,6 +8,7 @@ import {
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 import { FoodEntry, DailyTotals } from './types';
 import { parseMealDescription } from './services/geminiService';
+import HeroBild from "./components/HeroBild/HeroBild";
 
 const COLORS = ['#10b981', '#f59e0b', '#3b82f6', '#ef4444'];
 
@@ -150,9 +151,9 @@ const App: React.FC = () => {
         </nav>
 
         {/* Landing Page Hero */}
-        <div className="relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full bg-grid-slate-100 dark:bg-grid-slate-800 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:[mask-image:linear-gradient(0deg,black,rgba(0,0,0,0.6))] -z-10"></div>
-          <div className="max-w-5xl mx-auto px-4 py-16 text-center">
+        <div className="relative flex max-w-screen-lg mx-auto">
+          {/* <div className="absolute top-0 left-0 w-full h-full bg-grid-slate-100 dark:bg-grid-slate-800 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:[mask-image:linear-gradient(0deg,black,rgba(0,0,0,0.6))] -z-10"></div> */}
+          <div className="max-w-5xl xl:max-w-[450px] px-4 py-16 text-center mx-auto xl:mx-0">
             <div className="inline-flex items-center gap-2 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 px-4 py-2 rounded-full text-sm font-bold mb-8 animate-bounce">
               <Zap size={16} />
               KI-gestütztes Tracking
@@ -173,6 +174,9 @@ const App: React.FC = () => {
               Jetzt starten
               <ChevronRight className="group-hover:translate-x-1 transition-transform" />
             </button>
+          </div>
+          <div className='herobild'>
+            <HeroBild />
           </div>
         </div>
 

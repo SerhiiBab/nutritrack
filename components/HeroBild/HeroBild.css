@@ -1,0 +1,17 @@
+.container {
+  min-height: 600px;
+}
+
+.product {
+  position: absolute;
+  width: 120px;
+}
+
+.spaghetti {
+    width: 400px;
+}
+
+.teppich {
+    width: 450px;
+    z-index: -1;
+}
