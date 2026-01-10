@@ -18,8 +18,8 @@ const productsList: Product[] = [
 ];
 
 const finalPositions = [
-  { x: 150, y: 100 },
-  { x: 170, y: 120 },
+  { x: 150, y: 150 },
+  { x: 170, y: 170 },
   { x: 150, y: 100 },
   { x: 150, y: 400 },
   { x: 150, y: 400 },
