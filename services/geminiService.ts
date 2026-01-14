@@ -1,4 +1,4 @@
-// ./services/geminiService.ts
+// ./src/services/geminiService.ts
 import { NutritionData } from "../types";
 
 export async function parseMealDescription(description: string): Promise<NutritionData[]> {
@@ -9,7 +9,8 @@ export async function parseMealDescription(description: string): Promise<Nutriti
   });
 
   if (!res.ok) {
-    throw new Error("Fehler beim Abrufen der Mahlzeitanalyse");
+    const err = await res.json();
+    throw new Error(err.error || "Fehler beim Abrufen der Mahlzeitanalyse");
   }
 
   const data = await res.json();
